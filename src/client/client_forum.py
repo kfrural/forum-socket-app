@@ -36,7 +36,7 @@ def start_client():
     
     try:
         client.connect((server_host, PORT))
-        print(f"*** Conectado ao Fórum. Digite 'sair' ou pressione Ctrl+C para encerrar. ***")
+        print(f"*** Conectado ao Forum. Digite 'sair' ou pressione Ctrl+C para encerrar a aplicação. ***")
 
         receive_thread = threading.Thread(target=receive_messages, args=(client,))
         receive_thread.daemon = True
