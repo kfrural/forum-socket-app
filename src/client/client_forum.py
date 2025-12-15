@@ -30,6 +30,8 @@ def start_client():
     else:
         server_host = HOST
         
+    """determinou o IP do servidor (sys.argv[1] se fornecido, se não usa o padrão HOST)"""
+    
     print(f"Tentando conectar ao Servidor: {server_host}:{PORT}")
     
     client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
